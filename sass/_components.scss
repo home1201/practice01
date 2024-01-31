@@ -1,0 +1,26 @@
+@use './utils' as u;
+@use './base' as b;
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.wrapper {
+  width: min(u.em(b.$content-max-desktop), 100% - 4rem);
+  margin-inline: auto;
+}
+
+a.button {
+  display: inline-block;
+  padding: .7rem 2rem;
+  background-color: var(--color-primary-red);
+  color: var(--color-gray-100);
+}
+
+a:hover.button {
+  background-color: var(--color-gray-800);
+}

@@ -1,0 +1,86 @@
+@use 'utils' as u;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap');
+
+//CSS Variables
+:root {
+  //Color
+  --color-primary-orange: hsl(35, 77%, 62%);
+  --color-primary-red: hsl(5, 85%, 63%);
+
+  --color-gray-100: hsl(36, 100%, 99%);
+  --color-gray-200: hsl(233, 8%, 79%);
+  --color-gray-400: hsl(236, 13%, 42%);
+  --color-gray-800: hsl(240, 100%, 5%);
+
+
+  //Font
+  --font-scale-400: clamp(0.9375rem, 0.895rem + 0.21249999999999994vw, 1.15rem);
+  --font-scale-500: clamp(1.2rem, 1.17125rem + 0.14375000000000004vw, 1.34375rem);
+  --font-scale-600: clamp(1.44rem, 1.38425rem + 0.27875000000000005vw, 1.71875rem);
+  --font-scale-800: clamp(2.488rem, 2.4481rem + 0.1995vw, 2.6875rem);
+  --font-scale-900: clamp(2.986rem, 2.9432rem + 0.21399999999999997vw, 3.2rem);
+
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-weight-exbold: 800;
+}
+
+//Sass Variables
+$screen-max-mobile: 375;
+$screen-max-desktop: 1440;
+$content-max-desktop: 1160;
+
+//Reset
+*,
+*::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: var(--color-gray-400);
+  line-height: 1.6;
+  vertical-align: baseline;
+  font-size: var(--font-scale-400);
+}
+
+p {
+  font-size: inherit;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-family: 'Inter', sans-serif;
+  color: var(--color-gray-800);
+  font-size: var(--font-scale-900);
+  font-weight: var(--font-weight-exbold);
+  line-height: 1.15;
+}
+
+h2 {
+  font-size: var(--font-scale-600);
+}
+
+h3 {
+  font-size: var(--font-scale-500);
+}
+
+ul,
+ol {
+  list-style: none;
+}

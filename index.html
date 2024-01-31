@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/assets/images/favicon-32x32.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script type="module" src="/main.js"></script>
+  <title>세 번째 연습</title>
+</head>
+
+<body>
+  <header class="header wrapper flex">
+    <a href="#" class="header__logo u-margin-right-auto"><img src="/assets/images/logo.svg" alt="logo"></a>
+    <ul class="header__menu flex">
+      <li><a href="#" class="header__link">Home</a></li>
+      <li><a href="#" class="header__link">New</a></li>
+      <li><a href="#" class="header__link">Popular</a></li>
+      <li><a href="#" class="header__link">Trending</a></li>
+      <li><a href="#" class="header__link">Categories</a></li>
+    </ul>
+  </header>
+  <main class="wrapper grid main">
+    <section class="top grid">
+      <picture class="top__image">
+        <source srcset="/assets/images/image-web-3-desktop.jpg" media="(min-width: 23.4375em)">
+        <img src="/public/assets/images/image-web-3-mobile.jpg" alt="hero image">
+      </picture>
+      <h1 class="top__title">The Bright Future of Web 3.0?</h1>
+      <div class="top__description">
+        <p class="top__text">We dive into the next evolution of the web that claims to put the power of the
+          platforms back into the hands of the people.
+          But is it really fulfilling its promise?</p>
+        <a href="#" class="button top__link">Read more</a>
+      </div>
+    </section>
+    <section class="recent">
+      <h2 class="recent__heading">New</h2>
+      <article class="recent__item">
+        <h3 class="recent__title">Hydrogen VS Electric Cars</h3>
+        <p class="recent_description">Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </article>
+      <article class="recent__item">
+        <h3 class="recent__title">The Downsides of AI Artistry</h3>
+        <p class="recent_description">What are the possible adverse effects of on-demand AI image generation?</p>
+      </article>
+      <article class="recent__item">
+        <h3 class="recent__title">Is VC Funding Drying Up?</h3>
+        <p class="recent_description">Private funding by VC firms is down 50% YOY. We take a look at what that means.
+        </p>
+      </article>
+    </section>
+    <section class="ranking flex">
+      <article class="ranking__item">
+        <img src="/assets/images/image-retro-pcs.jpg" alt="retro pc" class="ranking__image">
+        <div class="ranking__number">01</div>
+        <h3 class="ranking__title">Reviving Retro PCs</h3>
+        <p class="ranking__description">What happens when old PCs are given modern upgrades?</p>
+      </article>
+      <article class="ranking__item">
+        <img src="/assets/images/image-top-laptops.jpg" alt="top laptops" class="ranking__image">
+        <div class="ranking__number">02</div>
+        <h3 class="ranking__title">Top 10 Laptops of 2022</h3>
+        <p class="ranking__description">Our best picks for various needs and budgets.</p>
+      </article>
+      <article class="ranking__item">
+        <img src="/assets/images/image-gaming-growth.jpg" alt="gaming growth" class="ranking__image">
+        <div class="ranking__number">03</div>
+        <h3 class="ranking__title">The Growth of Gaming</h3>
+        <p class="ranking__description">How the pandemic has sparked fresh opportunities.</p>
+      </article>
+    </section>
+  </main>
+</body>
+
+</html>
