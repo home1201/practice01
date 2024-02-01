@@ -6,14 +6,16 @@
   <link rel="icon" type="image/png" href="./assets/images/favicon-32x32.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>세 번째 연습</title>
-  <script type="module" crossorigin src="./assets/index-Rv91HKmk.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-bqZKhPT5.css">
+  <script type="module" crossorigin src="./assets/index-kS4uolKt.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-e3UgQnX1.css">
 </head>
 
 <body>
   <header class="header wrapper flex">
     <a href="#" class="header__logo u-margin-right-auto"><img src="./assets/images/logo.svg" alt="logo"></a>
-    <ul class="header__menu flex">
+    <button class="header__menu-btn header__menu-btn--open" aria-hidden="true" data-openMenuBtn></button>
+    <button class="header__menu-btn header__menu-btn--close" aria-hidden="true" data-closeMenuBtn></button>
+    <ul class="header__menu" data-menu="close">
       <li><a href="#" class="header__link">Home</a></li>
       <li><a href="#" class="header__link">New</a></li>
       <li><a href="#" class="header__link">Popular</a></li>
