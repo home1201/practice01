@@ -12,10 +12,76 @@
   &__menu {
     gap: 2rem;
     flex-wrap: wrap;
+    display: flex;
+
+    @media (width < u.em(math.div(b.$content-max-desktop, 2))) {
+      display: block;
+      position: fixed;
+      height: 100svh;
+      top: 0;
+      right: -100%;
+      background-color: var(--color-gray-100);
+      z-index: 1;
+      padding-top: 40%;
+      width: 70%;
+      padding-left: 8%;
+      font-size: var(--font-scale-500);
+      transition: right .5s;
+
+      &[data-menu="open"] {
+        right: 0;
+      }
+
+      & .header__link {
+        color: var(--color-gray-800);
+      }
+
+      &> :not(:last-child) {
+        margin-bottom: 5%;
+      }
+    }
   }
 
   &__link:hover {
     color: var(--color-primary-red);
+  }
+
+  &__menu-btn {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+
+    &--open {
+      background-image: url('/assets/images/icon-menu.svg');
+      display: none;
+
+      @media (width < u.em(math.div(b.$content-max-desktop, 2))) {
+        display: block;
+      }
+    }
+
+    &--close {
+      display: block;
+      position: fixed;
+      margin-top: 1.5rem;
+      margin-right: 1.5rem;
+      background-image: url('/assets/images/icon-menu-close.svg');
+      z-index: 2;
+      top: 0;
+      right: -100%;
+      transition: right .5s;
+
+      &:has(~[data-menu="open"]) {
+        right: 0;
+      }
+
+      @media (width >=u.em(math.div(b.$content-max-desktop, 2))) {
+        display: none;
+      }
+    }
   }
 }
 

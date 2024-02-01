@@ -12,7 +12,9 @@
 <body>
   <header class="header wrapper flex">
     <a href="#" class="header__logo u-margin-right-auto"><img src="/assets/images/logo.svg" alt="logo"></a>
-    <ul class="header__menu flex">
+    <button class="header__menu-btn header__menu-btn--open" aria-hidden="true" data-openMenuBtn></button>
+    <button class="header__menu-btn header__menu-btn--close" aria-hidden="true" data-closeMenuBtn></button>
+    <ul class="header__menu" data-menu="close">
       <li><a href="#" class="header__link">Home</a></li>
       <li><a href="#" class="header__link">New</a></li>
       <li><a href="#" class="header__link">Popular</a></li>
